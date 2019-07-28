@@ -1,8 +1,12 @@
+~~~
 npm install --save @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
 
 yarn add @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
 
+~~~
+
 create a fontawesome.js file in plugins folder and put this in it:
+~~~
 
 import Vue from 'vue'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
@@ -21,8 +25,11 @@ library.add(fab)
 // Register the component globally
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+~~~
+
 then in nuxt.config.js
 
+~~~
  css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
@@ -35,7 +42,10 @@ then in nuxt.config.js
 
   ],
   
+  ~~~
+  
   
   and then to use in any page:
+  ~~~
   
   <font-awesome-icon icon="['fab', 'facebook']"  style="font-size: 22px"/>
