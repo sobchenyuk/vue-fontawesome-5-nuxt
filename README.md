@@ -49,3 +49,4 @@ then in nuxt.config.js
   ~~~
   
   <font-awesome-icon icon="['fab', 'facebook']"  style="font-size: 22px"/>
+   ~~~
